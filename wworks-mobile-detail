@@ -1,0 +1,580 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (if backend added later)
+node_modules/
+.env
+.env.local
+
+# Build artifacts
+dist/
+build/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="W Works Mobile Detail - Professional mobile car detailing service in Central New Jersey">
+  <meta name="theme-color" content="#0c2b1c">
+  <title>W Works Mobile Detail | Professional Mobile Car Detailing</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230c2b1c' width='100' height='100'/><text x='50' y='70' font-size='60' fill='%23c8a135' text-anchor='middle' font-weight='bold' font-family='serif'>W</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-brand">
+    <img src="logo_clean.jpeg" alt="W Works Mobile Detail Logo" loading="lazy">
+    <div class="nav-wordmark">
+      W Works
+      <small>Mobile Detail</small>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#booking">Book</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#booking" class="nav-cta">Book Now</a></li>
+  </ul>
+  <div class="hamburger" id="ham" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about" onclick="toggleNav()">About</a>
+  <a href="#services" onclick="toggleNav()">Services</a>
+  <a href="#gallery" onclick="toggleNav()">Gallery</a>
+  <a href="#booking" onclick="toggleNav()">Book</a>
+  <a href="#contact" onclick="toggleNav()">Contact</a>
+  <a href="#booking" onclick="toggleNav()">→ Book an Appointment</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <p class="eyebrow">Mobile Detailing · We Come To You</p>
+    <h1 class="hero-title">Your Car<br>Deserves<br><em>The Works.</em></h1>
+    <p class="hero-sub">Detailing pro offering wash, clay bar, paint protection & more — brought directly to your door. No drop-offs. No waiting. Just elite results.</p>
+    <div class="hero-actions">
+      <a href="#booking" class="btn btn-gold">Book an Appointment</a>
+      <a href="#services" class="btn btn-outline">Our Services</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">796K+</div>
+        <div class="stat-label">Monthly Views</div>
+      </div>
+      <div>
+        <div class="stat-num">1K+</div>
+        <div class="stat-label">Followers</div>
+      </div>
+      <div>
+        <div class="stat-num">5★</div>
+        <div class="stat-label">Rated Service</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="logo-frame">
+      <img src="logo_clean.jpeg" alt="W Works Mobile Detail Logo" loading="lazy">
+      <div class="logo-badge">
+        <strong>100%</strong>
+        <span>Satisfaction<br>Guaranteed</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-text">
+      <p class="section-tag">Who We Are</p>
+      <h2 class="section-heading">Detail-Obsessed.<br>Always Mobile.</h2>
+      <div class="gold-rule"></div>
+      <p>W Works Mobile Detail is a professional auto detailing service that comes directly to you — at home, at the office, or wherever works best. We're passionate about making every vehicle look and feel its absolute best.</p>
+      <p>From a quick exterior refresh to our flagship W Works luxury package, every service is performed with premium products, expert technique, and genuine care for your ride.</p>
+      <p>No drop-offs. No waiting rooms. Just showroom-quality results delivered to your driveway.</p>
+      <a href="#booking" class="btn btn-gold" style="margin-top:28px; display:inline-block;">Schedule Your Detail</a>
+    </div>
+    <div class="about-img">
+      <img src="logo_foam.jpeg" alt="W Works Mobile Detail in Action" loading="lazy">
+      <div class="about-tag">
+        <strong>W Works</strong>
+        <span>Mobile Detail LLC</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <p class="section-tag">What We Offer</p>
+  <h2 class="section-heading">Our Packages</h2>
+  <p class="services-intro">Every package is designed to give your vehicle the attention it deserves. We come to you — all you do is unlock the car.</p>
+  <div class="services-grid">
+    <div class="svc-card">
+      <div class="svc-num">01</div>
+      <div class="svc-name">Exterior Detail</div>
+      <p class="svc-desc">A thorough hand wash, streak-free window cleaning, and meticulous cleaning of wheels and tires. Your exterior, turned out.</p>
+      <span class="svc-tag">Exterior</span>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">02</div>
+      <div class="svc-name">Interior Detail</div>
+      <p class="svc-desc">Deep vacuum of all carpets and seats, careful wipe-down of every surface, crevice brushing, floor mat shampooing, and a fresh scent option on request.</p>
+      <span class="svc-tag">Interior</span>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">03</div>
+      <div class="svc-name">Basic Detail</div>
+      <p class="svc-desc">Straightforward yet effective inside-and-out cleaning — interior vacuum & wipe-down plus a full exterior wash. Optional iron removal add-on available. Perfect for regular upkeep.</p>
+      <span class="svc-tag">Interior + Exterior</span>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">04</div>
+      <div class="svc-name">Deep Interior & Exterior + Protection</div>
+      <p class="svc-desc">Our all-inclusive premier treatment. Intensive interior cleaning, thorough exterior wash, pet hair & stain removal, iron removal, and a high-quality sealant protecting your paint for ~3 months. Watch the raindrops roll right off.</p>
+      <span class="svc-tag">⭐ Most Popular</span>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">05</div>
+      <div class="svc-name">The W Works</div>
+      <p class="svc-desc">The pinnacle of luxury detailing — the most comprehensive and refined care in our lineup. Crafted to give your vehicle an unmatched level of attention and detail. If you want the very best, this is it.</p>
+      <span class="svc-tag">Luxury Flagship</span>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">06</div>
+      <div class="svc-name">Custom & Add-Ons</div>
+      <p class="svc-desc">Iron removal, pet hair treatment, stain removal, clay bar, and more. Contact us and we'll build exactly the right package for your vehicle and budget.</p>
+      <span class="svc-tag">Custom Quote</span>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <p class="section-tag">Real Work. Real Results.</p>
+  <h2 class="section-heading">Car Wash <em>Wall of Fame</em></h2>
+  <p class="gallery-intro">Every car tells a story. Here's ours — real customers, real results, right in their driveway.</p>
+  <div class="gallery-grid">
+    <img src="g13.png" alt="Before and after car detailing - W Works" loading="lazy">
+    <img src="g8.png" alt="Car wash and detail service" loading="lazy">
+    <img src="g11.png" alt="Professional mobile detailing" loading="lazy">
+    <img src="g1.jpeg" alt="Vehicle exterior detailing" loading="lazy">
+    <img src="g9.png" alt="Car shine and polish" loading="lazy">
+    <img src="g2.jpeg" alt="Detailed car washing" loading="lazy">
+    <img src="g14.png" alt="Mobile detailing service" loading="lazy">
+    <img src="g3.jpeg" alt="Professional car care" loading="lazy">
+    <img src="g12.png" alt="Complete vehicle detailing" loading="lazy">
+    <img src="g4.jpeg" alt="Car detail results" loading="lazy">
+    <img src="g7.png" alt="Quality auto detailing" loading="lazy">
+    <img src="g5.jpeg" alt="Mobile wash service" loading="lazy">
+    <img src="g15.png" alt="Expert vehicle detailing" loading="lazy">
+    <img src="g6.jpeg" alt="Car maintenance detail" loading="lazy">
+    <img src="g10.png" alt="Professional wash and wax" loading="lazy">
+  </div>
+  <div style="text-align:center;margin-top:40px;">
+    <a href="https://instagram.com/w.works.llc" target="_blank" rel="noopener" class="btn btn-gold">See More on Instagram &rarr;</a>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking">
+  <p class="section-tag">Get On The Calendar</p>
+  <h2 class="section-heading">Book an Appointment</h2>
+  <div class="booking-layout">
+    <div class="booking-info">
+      <p>Fill out the form and we'll confirm your appointment within 24 hours. We come to you — just let us know where and when.</p>
+      <div class="info-points">
+        <div class="info-point">
+          <div class="info-point-icon">📍</div>
+          <div class="info-point-text">
+            <strong>We Come To You</strong>
+            Home, office, wherever — just provide your address.
+          </div>
+        </div>
+        <div class="info-point">
+          <div class="info-point-icon">⏱</div>
+          <div class="info-point-text">
+            <strong>Quick Confirmation</strong>
+            We'll reach out within 24 hours to lock in your time.
+          </div>
+        </div>
+        <div class="info-point">
+          <div class="info-point-icon">✨</div>
+          <div class="info-point-text">
+            <strong>Satisfaction Guaranteed</strong>
+            We're not happy until your car is spotless.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="booking-form">
+      <form id="bookingForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="Jane" required>
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Smith" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="jane@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="(555) 000-0000">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="service">Package</label>
+            <select id="service" required>
+              <option value="" disabled selected>Select a package</option>
+              <option>Exterior Detail</option>
+              <option>Interior Detail</option>
+              <option>Basic Detail</option>
+              <option>Deep Interior &amp; Exterior + Protection</option>
+              <option>The W Works (Flagship)</option>
+              <option>Custom / Add-Ons</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="vehicle">Vehicle (Year / Make / Model)</label>
+            <input type="text" id="vehicle" placeholder="e.g. 2022 Toyota Camry">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" required>
+          </div>
+          <div class="form-group">
+            <label for="time">Preferred Time</label>
+            <select id="time">
+              <option value="" disabled selected>Select a time</option>
+              <option>8:00 AM</option>
+              <option>10:00 AM</option>
+              <option>12:00 PM</option>
+              <option>2:00 PM</option>
+              <option>4:00 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group full">
+            <label for="address">Service Address</label>
+            <input type="text" id="address" placeholder="Where should we come to you?" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group full">
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" placeholder="Pet hair, stains, special requests, or anything we should know..."></textarea>
+          </div>
+        </div>
+        <div class="form-footer">
+          <button type="submit" class="btn btn-gold">Request Appointment</button>
+          <p class="form-note">Confirmation within 24 hours.</p>
+        </div>
+      </form>
+      <div class="success-msg" id="successMsg">
+        ✅ &nbsp; Thank you! Your request has been received. We'll be in touch within 24 hours to confirm your appointment.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="section-tag">Reach Out</p>
+  <h2 class="section-heading">Contact Us</h2>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="contact-icon">📞</div>
+      <div class="contact-lbl">Phone</div>
+      <div class="contact-val"><a href="tel:+17328825020">(732) 882-5020</a></div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">✉️</div>
+      <div class="contact-lbl">Email</div>
+      <div class="contact-val"><a href="mailto:info@wworksdetail.com">info@wworksdetail.com</a></div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">📍</div>
+      <div class="contact-lbl">Service Area</div>
+      <div class="contact-val">Central New Jersey · Mainly Edison</div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">📸</div>
+      <div class="contact-lbl">Instagram</div>
+      <div class="contact-val"><a href="https://instagram.com/w.works.llc" target="_blank" rel="noopener">@w.works.llc</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM STRIP -->
+<div class="insta-strip">
+  <div class="insta-left">
+    <div class="insta-icon">📸</div>
+    <div class="insta-text">
+      <strong>Follow Along on Instagram</strong>
+      <span>@w.works.llc · 796K+ monthly views · See our latest work</span>
+    </div>
+  </div>
+  <a href="https://instagram.com/w.works.llc" target="_blank" rel="noopener" class="btn btn-gold">Follow @w.works.llc</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 <span>W Works Mobile Detail LLC</span>. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+// Mobile Navigation Toggle
+function toggleNav() {
+  const mobileNav = document.getElementById('mobileNav');
+  mobileNav.classList.toggle('open');
+}
+
+// Form Submission Handler
+document.getElementById('bookingForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  // Get form data
+  const formData = new FormData(this);
+  const data = {
+    firstName: document.getElementById('fname').value,
+    lastName: document.getElementById('lname').value,
+    email: document.getElementById('email').value,
+    phone: document.getElementById('phone').value,
+    service: document.getElementById('service').value,
+    vehicle: document.getElementById('vehicle').value,
+    date: document.getElementById('date').value,
+    time: document.getElementById('time').value,
+    address: document.getElementById('address').value,
+    notes: document.getElementById('notes').value
+  };
+  
+  // Log form data (replace with actual backend call)
+  console.log('Booking Request:', data);
+  
+  // Show success message
+  document.getElementById('bookingForm').style.display = 'none';
+  document.getElementById('successMsg').style.display = 'block';
+  
+  // Reset form after 3 seconds
+  setTimeout(() => {
+    document.getElementById('bookingForm').reset();
+    document.getElementById('bookingForm').style.display = 'block';
+    document.getElementById('successMsg').style.display = 'none';
+  }, 3000);
+});
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+      // Close mobile nav if open
+      document.getElementById('mobileNav').classList.remove('open');
+    }
+  });
+});
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --green:     #0c2b1c;
+  --green-mid: #163d28;
+  --gold:      #c8a135;
+  --gold-lt:   #e2bc62;
+  --cream:     #f7f5ef;
+  --muted:     #6b6b5e;
+  --border:    #dedad0;
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--green);
+  overflow-x: hidden;
+}
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 6vw;
+  background: rgba(12,43,28,0.97);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(200,161,53,0.22);
+}
+.nav-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.nav-brand img { height: 48px; width: 48px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold); }
+.nav-wordmark { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--gold); line-height: 1.15; }
+.nav-wordmark small { display: block; font-family: 'DM Sans', sans-serif; font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(200,161,53,0.55); font-weight: 400; }
+.nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
+.nav-links a { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; color: rgba(247,245,239,0.6); transition: color 0.2s; }
+.nav-links a:hover { color: var(--gold); }
+.nav-cta { background: var(--gold) !important; color: var(--green) !important; padding: 9px 22px !important; border-radius: 2px; font-weight: 500 !important; }
+.nav-cta:hover { background: var(--gold-lt) !important; }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--gold); border-radius: 2px; }
+.mobile-nav { display: none; position: fixed; top: 76px; left: 0; right: 0; z-index: 199; background: rgba(12,43,28,0.98); backdrop-filter: blur(16px); padding: 24px 6vw 32px; border-bottom: 1px solid rgba(200,161,53,0.2); flex-direction: column; }
+.mobile-nav.open { display: flex; }
+.mobile-nav a { display: block; padding: 14px 0; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; text-decoration: none; color: rgba(247,245,239,0.7); border-bottom: 1px solid rgba(200,161,53,0.1); transition: color 0.2s; }
+.mobile-nav a:last-child { border-bottom: none; color: var(--gold); margin-top: 8px; }
+.mobile-nav a:hover { color: var(--gold); }
+
+/* HERO */
+.hero { min-height: 100vh; background: var(--green); display: grid; grid-template-columns: 1fr 1fr; padding-top: 76px; position: relative; overflow: hidden; }
+.hero::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 75% 40%, rgba(200,161,53,0.08) 0%, transparent 55%); pointer-events: none; }
+.hero-left { display: flex; flex-direction: column; justify-content: center; padding: 80px 4vw 80px 8vw; position: relative; z-index: 2; }
+.eyebrow { font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-bottom: 22px; animation: up 0.7s ease both; }
+.hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 5.5vw, 5rem); font-weight: 900; line-height: 1.0; color: #fff; animation: up 0.7s 0.08s ease both; }
+.hero-title em { font-style: italic; color: var(--gold); }
+.hero-sub { margin-top: 26px; font-size: 1rem; font-weight: 300; color: rgba(247,245,239,0.65); max-width: 400px; line-height: 1.75; animation: up 0.7s 0.16s ease both; }
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 38px; animation: up 0.7s 0.24s ease both; }
+.hero-stats { display: flex; gap: 36px; margin-top: 52px; padding-top: 36px; border-top: 1px solid rgba(200,161,53,0.18); animation: up 0.7s 0.32s ease both; flex-wrap: wrap; }
+.stat-num { font-family: 'Playfair Display', serif; font-size: 1.9rem; font-weight: 700; color: var(--gold); line-height: 1; }
+.stat-label { font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(247,245,239,0.45); margin-top: 5px; }
+.hero-right { display: flex; align-items: center; justify-content: center; padding: 60px 8vw 60px 4vw; position: relative; z-index: 2; animation: fadeIn 1s 0.3s ease both; }
+.logo-frame { position: relative; width: clamp(240px, 32vw, 420px); }
+.logo-frame img { width: 100%; border-radius: 50%; display: block; box-shadow: 0 0 80px rgba(200,161,53,0.22), 0 0 0 1px rgba(200,161,53,0.15); }
+.logo-badge { position: absolute; bottom: -10px; right: -10px; background: var(--gold); color: var(--green); padding: 14px 18px; border-radius: 2px; text-align: center; }
+.logo-badge strong { font-family: 'Playfair Display', serif; font-size: 1.4rem; display: block; line-height: 1; }
+.logo-badge span { font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; }
+
+/* SHARED */
+section { padding: clamp(70px, 10vw, 120px) 8vw; }
+.section-tag { font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-bottom: 14px; }
+.section-heading { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 900; line-height: 1.1; margin-bottom: 24px; }
+.gold-rule { width: 44px; height: 2px; background: var(--gold); margin-bottom: 28px; }
+.btn { display: inline-block; padding: 14px 32px; font-size: 0.76rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; text-decoration: none; border-radius: 2px; transition: all 0.22s; cursor: pointer; border: none; font-family: 'DM Sans', sans-serif; }
+.btn-gold { background: var(--gold); color: var(--green); }
+.btn-gold:hover { background: var(--gold-lt); }
+.btn-outline { border: 1.5px solid rgba(200,161,53,0.55); color: rgba(247,245,239,0.8); background: transparent; }
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+/* ABOUT */
+#about { background: var(--cream); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+.about-text p { font-size: 0.97rem; font-weight: 300; color: #4a4a3e; margin-bottom: 16px; line-height: 1.8; }
+.about-img { position: relative; }
+.about-img img { width: 100%; border-radius: 4px; display: block; box-shadow: 0 20px 60px rgba(12,43,28,0.15); }
+.about-tag { position: absolute; bottom: -18px; left: -18px; background: var(--green); color: var(--gold); padding: 18px 22px; border-radius: 2px; }
+.about-tag strong { font-family: 'Playfair Display', serif; font-size: 1.6rem; display: block; line-height: 1; }
+.about-tag span { font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(200,161,53,0.65); }
+
+/* SERVICES */
+#services { background: var(--green); }
+#services .section-heading { color: #fff; }
+.services-intro { color: rgba(247,245,239,0.55); font-size: 0.95rem; font-weight: 300; max-width: 520px; margin-bottom: 52px; line-height: 1.8; }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+.svc-card { background: var(--green-mid); padding: 38px 30px; border: 1px solid rgba(200,161,53,0.1); position: relative; overflow: hidden; transition: background 0.25s, border-color 0.25s; }
+.svc-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform 0.3s; }
+.svc-card:hover { background: #1e4a30; border-color: rgba(200,161,53,0.25); }
+.svc-card:hover::before { transform: scaleX(1); }
+.svc-num { font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 900; color: rgba(200,161,53,0.15); line-height: 1; margin-bottom: 16px; }
+.svc-name { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: #fff; margin-bottom: 14px; line-height: 1.3; }
+.svc-desc { font-size: 0.85rem; font-weight: 300; color: rgba(247,245,239,0.55); line-height: 1.75; }
+.svc-tag { display: inline-block; margin-top: 18px; font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); border: 1px solid rgba(200,161,53,0.3); padding: 5px 12px; border-radius: 1px; }
+
+/* GALLERY */
+#gallery { background:#0a2218; }
+#gallery .section-heading { color:#fff; }
+.gallery-intro { color:rgba(247,245,239,0.5); font-size:0.93rem; font-weight:300; max-width:500px; margin:20px 0 48px; line-height:1.8; }
+.gallery-grid { columns:3; column-gap:10px; }
+.gallery-grid img { break-inside:avoid; margin-bottom:10px; border-radius:3px; width:100%; display:block; transition:transform 0.4s; }
+.gallery-grid img:hover { transform:scale(1.03); }
+
+/* BOOKING */
+#booking { background: var(--cream); }
+.booking-layout { display: grid; grid-template-columns: 1fr 1.6fr; gap: 72px; align-items: start; margin-top: 8px; }
+.booking-info p { font-size: 0.93rem; font-weight: 300; color: var(--muted); line-height: 1.8; margin-bottom: 16px; }
+.info-points { margin-top: 28px; display: flex; flex-direction: column; gap: 14px; }
+.info-point { display: flex; gap: 14px; align-items: flex-start; }
+.info-point-icon { width: 32px; height: 32px; flex-shrink: 0; background: var(--green); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; margin-top: 2px; }
+.info-point-text { font-size: 0.88rem; font-weight: 300; color: var(--muted); line-height: 1.6; }
+.info-point-text strong { font-weight: 500; color: var(--green); display: block; }
+.booking-form { background: #fff; border: 1px solid var(--border); border-radius: 4px; padding: 40px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 18px; }
+.form-group { display: flex; flex-direction: column; gap: 7px; }
+.form-group.full { grid-column: 1 / -1; }
+label { font-size: 0.67rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; color: var(--muted); }
+input, select, textarea { font-family: 'DM Sans', sans-serif; font-size: 0.93rem; font-weight: 300; border: 1.5px solid var(--border); border-radius: 2px; padding: 12px 14px; background: var(--cream); color: var(--green); transition: border-color 0.2s; outline: none; width: 100%; }
+input:focus, select:focus, textarea:focus { border-color: var(--green); background: #fff; }
+textarea { min-height: 100px; resize: vertical; }
+.form-footer { margin-top: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.form-note { font-size: 0.75rem; color: var(--muted); font-style: italic; }
+.success-msg { display: none; background: #edf7ed; border: 1.5px solid #a8d5a8; border-radius: 4px; padding: 20px 24px; text-align: center; color: #2e6b2e; font-size: 0.93rem; margin-top: 20px; }
+
+/* CONTACT */
+#contact { background: var(--green); }
+#contact .section-heading { color: #fff; }
+.contact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; margin-top: 48px; }
+.contact-card { background: var(--green-mid); border: 1px solid rgba(200,161,53,0.1); padding: 32px 24px; transition: background 0.2s; }
+.contact-card:hover { background: #1e4a30; }
+.contact-icon { font-size: 1.4rem; margin-bottom: 14px; }
+.contact-lbl { font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(200,161,53,0.55); margin-bottom: 6px; }
+.contact-val { font-size: 0.93rem; color: #fff; font-weight: 300; }
+.contact-val a { color: var(--gold-lt); text-decoration: none; }
+.contact-val a:hover { color: var(--gold); }
+
+/* INSTAGRAM STRIP */
+.insta-strip { background: #081a10; border-top: 1px solid rgba(200,161,53,0.15); padding: 48px 8vw; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px; }
+.insta-left { display: flex; align-items: center; gap: 20px; }
+.insta-icon { width: 52px; height: 52px; background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; }
+.insta-text strong { display: block; font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; }
+.insta-text span { font-size: 0.75rem; color: rgba(247,245,239,0.5); font-weight: 300; }
+
+/* FOOTER */
+footer { background: #060f09; color: rgba(247,245,239,0.3); text-align: center; padding: 28px 8vw; font-size: 0.75rem; letter-spacing: 0.08em; border-top: 1px solid rgba(200,161,53,0.08); }
+footer span { color: var(--gold); }
+
+/* ANIMATIONS */
+@keyframes up { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-right { padding: 0 8vw 60px; justify-content: flex-start; }
+  .logo-frame { width: clamp(200px, 55vw, 300px); }
+  .about-grid { grid-template-columns: 1fr; gap: 56px; }
+  .about-tag { left: 0; }
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  .booking-layout { grid-template-columns: 1fr; gap: 40px; }
+  .contact-grid { grid-template-columns: 1fr 1fr; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+}
+@media (max-width: 560px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .gallery-grid { columns: 1; }
+}
